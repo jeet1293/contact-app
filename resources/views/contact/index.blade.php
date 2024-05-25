@@ -79,7 +79,7 @@
             var table = $('#contactListTable').DataTable({
                 processing: true,
                 serverSide: true,
-                ajax: "{{ route('home') }}",
+                ajax: "{{ route('contact.index') }}",
                 columns: [
                     {data: 'checkbox', name: 'checkbox', sortable: false},
                     {data: 'name', name: 'name'},
